@@ -1,0 +1,93 @@
+/* SASS: L'ordre de chargement des variables / fichiers scss est très important.
+Si on charge les fichiers avant les variables, le fichier ne pourras pas les reconnaitrent car elles n'auront pas été identifiées en amont. Donc, créer les variables avant d'importer les fichiers scss. */
+
+/* VARIABLES */
+$header1: 2.5rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 2.5rem;
+$gradient: linear-gradient(left, #38a4d3, #38d39f);
+$gradient2: linear-gradient(left, #337591, #20795b);
+$background-color: #154353;
+$grey-text: #2c2c2c;
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+/* ASTUCES / WARNING!!!: l'astuce d'utiliser "calc" pour redimensionner une font de façon responsive ne fonctionnera pas en Sass comme en CSS natif.
+Exemple: 
+CSS natif = 
+h2 {
+    font-size: calc(Xrem + Yvw) 
+}
+
+Sass = 
+1) on déclare la variable => $fontX = Xrem
+2) c'est alors dans le CSS classique que l'on va utiliser la variable $fontX:
+h2 {
+    font-size: calc($fontX + Yvw)
+}
+*/
+
+/* IMPORTS FICHIERS SCSS */
+@import "global";
+@import "intro";
+
+@media screen and (max-width: 1450px) {
+  html {
+    font-size: 50%;
+  }
+  svg {
+    width: 90%;
+  }
+  nav {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .splash {
+    display: none;
+  }
+  svg {
+    height: 60%;
+  }
+  div.logo {
+    @include flex(row, center, center);
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 512px) {
+  html {
+    font-size: 45%;
+  }
+
+  .intro-text {
+    text-align: center;
+  }
+
+  .intro-social a {
+    margin: 2rem;
+  }
+
+  .intro-images {
+    text-align: center;
+  }
+
+  .intro h2 {
+    font-size: 6rem;
+    padding: 0rem;
+  }
+
+  .intro h3 {
+    font-size: 5rem;
+  }
+}

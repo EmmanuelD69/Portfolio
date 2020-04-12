@@ -1,0 +1,48 @@
+/* global style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* l'utilisation de (--) permet de créer des variables que l'on peut ensuite utiliser à n'importe quel endroit du code CSS. Cela permet en une seule manipulation sur la valeur de la variable, de changer tout ou partie d'une section du site sans avoir à revenir sur chaque valeurs indépendemment. */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: $header1;
+}
+
+li,
+button,
+label,
+input,
+p,
+a {
+  font-size: $text;
+}
+h2 {
+  font-size: $header2;
+}
+h3 {
+  font-size: $header3;
+}
+
+h4,
+h5 {
+  font-size: $header4;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $grey-text;
+}
