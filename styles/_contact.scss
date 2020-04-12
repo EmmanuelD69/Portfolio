@@ -36,17 +36,3 @@ header {
     }
   }
 }
-
-// footer {
-//   min-height: 10vh;
-//   background: cadetblue;
-//   @include flex(row, center, center);
-//   h4 {
-//     flex: 2 1 60rem;
-//     margin-left: 5rem;
-//   }
-//   ul {
-//     flex: 1 1 40rem;
-//     @include flex(row, space-around, center);
-//   }
-// }
