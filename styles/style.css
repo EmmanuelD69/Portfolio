@@ -370,51 +370,35 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 3rem 10rem;
-  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.205);
-          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.205);
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.205), 0px 20px 40px rgba(0, 0, 0, 0.205);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.205), 0px 20px 40px rgba(0, 0, 0, 0.205);
+  border-radius: 2rem;
 }
 
-footer {
-  min-height: 10vh;
-  background: cadetblue;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.form-section form input,
+.form-section form textarea {
+  margin: 2rem;
 }
 
-footer h4 {
-  -webkit-box-flex: 2;
-      -ms-flex: 2 1 60rem;
-          flex: 2 1 60rem;
-  margin-left: 5rem;
+.form-section form input:focus,
+.form-section form textarea:focus {
+  outline: 2px solid black;
 }
 
-footer ul {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.form-section form textarea {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+.form-section form button {
+  width: 100%;
+  padding: 2rem;
+  background: #154353;
+  color: white;
+}
+
+.form-section form button:focus {
+  background: #347681;
 }
 
 @media screen and (max-width: 1450px) {
@@ -510,6 +494,11 @@ footer ul {
   .sarah-connor img {
     width: 100%;
     height: 100%;
+  }
+  form {
+    padding: 0rem;
+    width: 95%;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
