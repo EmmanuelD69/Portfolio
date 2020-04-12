@@ -1,11 +1,6 @@
-header {
-  min-height: 10vh;
-}
-
 .form-section {
   min-height: 80vh;
   @include flex(row, center, center);
-  margin-top: 3rem;
   form {
     @include flex(column, center, center);
     padding: 3rem 10rem;

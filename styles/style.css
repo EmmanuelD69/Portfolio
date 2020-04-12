@@ -70,8 +70,10 @@ a {
 }
 
 .main-head {
-  width: 95%;
-  margin: 0 0 0 auto;
+  width: 100%;
+  padding: 0 0 0 5%;
+  background: -webkit-gradient(linear, left top, right top, from(#38a4d3), to(#38d39f));
+  background: linear-gradient(left, #38a4d3, #38d39f);
 }
 
 nav {
@@ -136,7 +138,7 @@ nav ul {
 }
 
 .intro {
-  min-height: 90vh;
+  min-height: 80vh;
   width: 90%;
   margin: auto;
   -ms-flex-wrap: wrap;
@@ -302,7 +304,7 @@ nav ul {
 .projects {
   width: 90%;
   margin: auto;
-  min-height: 90vh;
+  min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,10 +335,6 @@ nav ul {
           flex: 1 1 40rem;
 }
 
-header {
-  min-height: 10vh;
-}
-
 .form-section {
   min-height: 80vh;
   display: -webkit-box;
@@ -352,7 +350,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 3rem;
 }
 
 .form-section form {
@@ -402,7 +399,7 @@ header {
 }
 
 footer {
-  min-height: 7.1vh;
+  min-height: 10vh;
   background: #154353;
   color: white;
   padding: 0% 5%;
