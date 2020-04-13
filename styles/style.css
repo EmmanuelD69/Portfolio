@@ -71,9 +71,9 @@ a {
 
 .main-head {
   width: 100%;
-  padding: 0 0 0 5%;
-  background: -webkit-gradient(linear, left top, right top, from(#38a4d3), to(#38d39f));
-  background: linear-gradient(left, #38a4d3, #38d39f);
+  padding: 0 5%;
+  background: -webkit-gradient(linear, left top, right top, from(#38a4d3), to(rgba(54, 211, 159, 0.555)));
+  background: linear-gradient(left, #38a4d3, rgba(54, 211, 159, 0.555));
 }
 
 nav {
@@ -84,14 +84,13 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   min-height: 10vh;
-  width: 60%;
+  width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -137,6 +136,10 @@ nav ul {
           flex: 1 1 40rem;
 }
 
+nav .flag {
+  margin-left: 3rem;
+}
+
 .intro {
   min-height: 80vh;
   width: 90%;
@@ -161,8 +164,8 @@ nav ul {
 .intro h2 {
   font-size: 8rem;
   padding-top: 2rem;
-  background: -webkit-gradient(linear, left top, right top, from(#38a4d3), to(#38d39f));
-  background: linear-gradient(left, #38a4d3, #38d39f);
+  background: -webkit-gradient(linear, left top, right top, from(#38a4d3), to(rgba(54, 211, 159, 0.555)));
+  background: linear-gradient(left, #38a4d3, rgba(54, 211, 159, 0.555));
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;

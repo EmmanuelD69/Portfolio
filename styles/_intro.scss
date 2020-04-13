@@ -1,13 +1,13 @@
 .main-head {
   width: 100%;
-  padding: 0 0 0 5%;
+  padding: 0 5%;
   background: $gradient;
 }
 
 nav {
-  @include flex(row, space-between, center);
+  @include flex(row, space-around, center);
   min-height: 10vh;
-  width: 60%;
+  width: 100%;
   flex-wrap: wrap;
   .logo {
     @include flex(row, flex-start, center);
@@ -19,6 +19,9 @@ nav {
   ul {
     @include flex(row, space-around, center);
     flex: 1 1 40rem;
+  }
+  .flag {
+    margin-left: 3rem;
   }
 }
 
