@@ -11,17 +11,20 @@ nav {
   flex-wrap: wrap;
   .logo {
     @include flex(row, flex-start, center);
-    flex: 1 1 10rem;
-    h1 {
-      margin: 2rem;
-    }
+    flex: 1 1 40rem;
+  }
+  h1 {
+    font-size: 4rem;
+    margin: 2rem;
   }
   ul {
     @include flex(row, space-around, center);
-    flex: 1 1 40rem;
+    flex: 1 1 50rem;
   }
   .flag {
+    @include flex(row, flex-end, center);
     margin-left: 3rem;
+    flex: 1 1 10rem;
   }
 }
 
