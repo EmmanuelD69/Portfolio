@@ -34,11 +34,13 @@ nav {
   margin: auto;
   flex-wrap: wrap;
   @include flex(row, space-between, center);
+
+  /* l'usage de "-webkit" permet une validation mutli plateforme de notre commande. il est important de ne pas l'oublier ou l'effet voulu ne fonctionnera pas. */
   h2 {
     font-size: 8rem;
     padding-top: 2rem;
     background: $gradient;
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
   }

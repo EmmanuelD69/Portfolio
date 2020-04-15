@@ -176,6 +176,7 @@ nav .flag {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* l'usage de "-webkit" permet une validation mutli plateforme de notre commande. il est important de ne pas l'oublier ou l'effet voulu ne fonctionnera pas. */
 }
 
 .intro h2 {
@@ -183,7 +184,7 @@ nav .flag {
   padding-top: 2rem;
   background: -webkit-gradient(linear, left top, right top, from(#38a4d3), to(rgba(54, 211, 159, 0.555)));
   background: linear-gradient(left, #38a4d3, rgba(54, 211, 159, 0.555));
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
