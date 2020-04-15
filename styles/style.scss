@@ -66,20 +66,23 @@ h2 {
 @media screen and (max-width: 1024px) {
   nav {
     .logo {
-      flex: 1 1 100rem;
+      flex: 1 1 30rem;
+      order: 1;
     }
     ul {
       width: 100%;
       @include flex(row, space-around, center);
       flex: 1 1 100rem;
-      li {
+      margin: 1rem 0rem 3rem;
+      order: 3;
+      a {
         width: 10rem;
       }
     }
     .flag {
-      flex: 1 1 50rem;
+      order: 2;
+      flex: 1 1 10rem;
       @include flex(row, center, center);
-      margin: 2rem 0rem 1rem;
     }
   }
 
@@ -108,6 +111,21 @@ h2 {
 @media screen and (max-width: 512px) {
   html {
     font-size: 45%;
+  }
+  nav {
+    padding-top: 1rem;
+    .logo {
+      flex: 1 1 30rem;
+      order: 1;
+    }
+    .flag {
+      margin: 0rem;
+    }
+  }
+
+  nav .logo h1 {
+    font-size: 3rem;
+    margin: 0rem;
   }
 
   .intro-text {
