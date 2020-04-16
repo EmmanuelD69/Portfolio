@@ -10,12 +10,12 @@ main {
   @include flex(row, space-between, center);
   text-align: center;
   flex-wrap: wrap;
-  h2 {
-    margin: 2rem 0rem 4rem;
+  p {
+    margin: 1rem 0rem 4rem;
   }
   div {
     flex: 1 1 50rem;
-    margin-bottom: 5rem;
+    margin-top: 5rem;
   }
   img {
     border-radius: 2rem;

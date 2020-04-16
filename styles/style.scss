@@ -106,11 +106,14 @@ h2 {
       height: 100%;
     }
   }
+  footer h4 {
+    font-size: 1.6rem;
+  }
 }
 
 @media screen and (max-width: 512px) {
   html {
-    font-size: 45%;
+    font-size: 40%;
   }
   nav {
     padding-top: 1rem;
@@ -121,11 +124,14 @@ h2 {
     .flag {
       margin: 0rem;
     }
+    ul {
+      margin: 2rem 0rem;
+    }
   }
 
   nav .logo h1 {
     font-size: 3rem;
-    margin: 0rem;
+    // margin: 0rem;
   }
 
   .intro-text {
@@ -161,5 +167,9 @@ h2 {
     padding: 0rem;
     width: 95%;
     margin: auto;
+  }
+
+  footer h4 {
+    font-size: 1.5rem;
   }
 }
