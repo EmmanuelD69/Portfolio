@@ -1,21 +1,18 @@
-main {
-  background-color: rgba(0, 0, 0, 0.11);
-}
-
 .projects {
   width: 90%;
-  margin: auto;
+  margin: 2rem auto;
   min-height: 80vh;
   // background: red;
   @include flex(row, space-between, center);
   text-align: center;
   flex-wrap: wrap;
   p {
-    margin: 1rem 0rem 4rem;
+    margin: 1rem;
   }
   div {
     flex: 1 1 50rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
+    min-height: 60rem;
   }
   img {
     border-radius: 2rem;

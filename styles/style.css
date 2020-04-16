@@ -32,6 +32,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: rgba(0, 0, 0, 0.11);
 }
 
 h1 {
@@ -176,7 +177,7 @@ nav .flag {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* l'usage de "-webkit" permet une validation mutli plateforme de notre commande. il est important de ne pas l'oublier ou l'effet voulu ne fonctionnera pas. */
+  /* l'usage de "-webkit" permet une validation mutli plateforme de notre commande. il est important de ne pas l'oublier ou l'effet voulu ne fonctionnera pas. Il faut aussi conserver la délcaration d'origine, sans le -webkit devant pour "background-clip" */
 }
 
 .intro h2 {
@@ -323,13 +324,9 @@ nav .flag {
   }
 }
 
-main {
-  background-color: rgba(0, 0, 0, 0.11);
-}
-
 .projects {
   width: 90%;
-  margin: auto;
+  margin: 2rem auto;
   min-height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -350,14 +347,15 @@ main {
 }
 
 .projects p {
-  margin: 1rem 0rem 4rem;
+  margin: 1rem;
 }
 
 .projects div {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50rem;
           flex: 1 1 50rem;
-  margin-top: 5rem;
+  margin-top: 1rem;
+  min-height: 60rem;
 }
 
 .projects img {

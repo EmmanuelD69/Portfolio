@@ -35,7 +35,7 @@ nav {
   flex-wrap: wrap;
   @include flex(row, space-between, center);
 
-  /* l'usage de "-webkit" permet une validation mutli plateforme de notre commande. il est important de ne pas l'oublier ou l'effet voulu ne fonctionnera pas. */
+  /* l'usage de "-webkit" permet une validation mutli plateforme de notre commande. il est important de ne pas l'oublier ou l'effet voulu ne fonctionnera pas. Il faut aussi conserver la délcaration d'origine, sans le -webkit devant pour "background-clip" */
   h2 {
     font-size: 8rem;
     padding-top: 2rem;
